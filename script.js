@@ -2,15 +2,11 @@ function changeTheme() {
   const html = document.documentElement
   html.classList.toggle("light")
 
-  // pegar a tag img
   const image = document.querySelector("#profile img")
 
-  //depois de pegar substituir a imagem
   if (html.classList.contains("light")) {
-    // se tiver light mode, adicionar a imagem light
-    image.setAttribute("src", "assets/bg-white.avif")
+    image.setAttribute("src", "/darkmode-lightmode/assets/bg-white.avif")
   } else {
-    // se tiver sem o light mode, manter a imagem normal
-    image.setAttribute("src", "assets/bg-black.jpg")
+    image.setAttribute("src", "/darkmode-lightmode/assets/bg-black.jpg")
   }
 }
